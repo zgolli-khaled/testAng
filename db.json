@@ -1,19 +1,18 @@
 {
-  "posts": [
+  "videos": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "titre": "ddddddd",
+      "genre": "ssss",
+      "public": true,
+      "nbrShared": 2
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "titre": "sdfsd",
+      "genre": "vvvvvvvv",
+      "public": "sdfsd",
+      "nbrShared": 2
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

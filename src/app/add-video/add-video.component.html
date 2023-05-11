@@ -1,0 +1,52 @@
+<form #f="ngForm">
+    <div class="form-group">
+        <label for="exampleInputEmail1">id</label>
+        <input type="number" class="form-control" name="id" placeholder="id" [(ngModel)]="video.id" required
+            #id="ngModel">
+    </div>
+    <div class="alert alert-danger" *ngIf="id.invalid && id.touched">
+        <p *ngIf="id.errors?.['required']">id is required</p>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">title</label>
+        <input type="text" class="form-control" name="title" placeholder="title" [(ngModel)]="video.titre"  pattern="[A-Z].*"
+            #title="ngModel">
+    </div>
+   
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">genre</label>
+        <input type="text" class="form-control" name="genre" placeholder="genre" [(ngModel)]="video.genre" required
+        #genre="ngModel">
+    </div>
+    
+
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">public</label>
+        <input type="text" class="form-control" name="public" placeholder="public" [(ngModel)]="video.public" required
+            #public="ngModel">
+
+    </div>
+
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">nbr</label>
+        <input type="number" class="form-control" name="nbr" placeholder="nbr" [(ngModel)]="video.nbrShared" required
+            #public="ngModel">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <button type="submit" class="btn btn-primary" [disabled]="f.invalid" (click)="addVideo()">Submit</button>
+</form>
+
+<!-- hedhi besh ntesti si l objet 9a3ed yet3aba ou non -->
